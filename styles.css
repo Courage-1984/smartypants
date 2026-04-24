@@ -552,6 +552,17 @@ h2 {
   font-size: 0.88rem;
 }
 
+.footer-bottom a {
+  color: #e4f5ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 .faq {
   padding-top: 2.4rem;
 }
