@@ -304,6 +304,10 @@ h2 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-rows: minmax(120px, auto);
   gap: 1.2rem;
+  background: linear-gradient(rgba(248, 252, 255, 0.9), rgba(248, 252, 255, 0.9)),
+    url("../backgrounds/BG\ 1.png") center / cover no-repeat;
+  border-radius: 20px;
+  padding: 1.2rem;
 }
 
 .about-heading {
@@ -492,6 +496,13 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.programmes {
+  background: linear-gradient(rgba(248, 252, 255, 0.9), rgba(248, 252, 255, 0.9)),
+    url("../backgrounds/BG\ 2.png") center / cover no-repeat;
+  border-radius: 20px;
+  padding: 1.4rem;
 }
 
 .section-intro {
@@ -683,6 +694,22 @@ h2 {
 
 .contact-section {
   background: linear-gradient(180deg, #eaf3f9 0%, #e0edf5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(234, 243, 249, 0.92), rgba(224, 237, 245, 0.94)),
+    url("../backgrounds/BG\ 3.png") center / cover no-repeat;
+  z-index: 0;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-panels {
